@@ -1,0 +1,139 @@
+body, #entrance, #entrance .col-md-12{
+    height: 100vh;
+    overflow: hidden;
+}
+.content-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.branch-main{
+    position: relative;
+    width: 1200px;  
+    height: 960px;
+}
+.branch-circle{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    border: 8px solid red;
+    box-shadow: 10px 10px 30px rgb(0, 0, 0, 10%);
+    position: relative;
+}
+.branch-circle::before{
+    content: "";
+    width: 35px;
+    height: 140px;
+    position: absolute;
+    box-shadow: 5px 0 0 red;
+    right: 20%;
+    top: 100%;
+    transform: rotate(180deg);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.branch-circle::after{
+    content: "";
+    width: 35px;
+    height: 140px;
+    position: absolute;
+    box-shadow: 5px 0 0 red;
+    left: 20%;
+    top: 100%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.branch-main .ring{
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+    height: 300px;
+    width: 300px;
+    border: 8px solid green;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+}
+.branch-main .branch-circle#one{
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+}
+.branch-main .branch-circle#second{
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+}
+.branch-main .branch-circle#third{
+    position: absolute;
+    top: 0%;
+    left: 32%;
+    transform: translateX(60%);
+    -webkit-transform: translateX(60%);
+    -moz-transform: translateX(60%);
+    -ms-transform: translateX(60%);
+    -o-transform: translateX(60%);
+}
+.branch-main .branch-circle#fourth{
+    position: absolute;
+    top: 60%;
+    right: 15%;
+    transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+}
+.branch-main .branch-circle#fifth{
+    position: absolute;
+    right: 42%;
+    top: 79%;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.branch-main .branch-circle#sixth{
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    transform: rotate(-120deg);
+    -webkit-transform: rotate(-120deg);
+    -moz-transform: rotate(-120deg);
+    -ms-transform: rotate(-120deg);
+    -o-transform: rotate(-120deg);
+}

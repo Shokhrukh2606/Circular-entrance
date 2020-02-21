@@ -1,0 +1,78 @@
+.header-image{
+  max-width: 100%;
+}
+.acceptance{
+  max-height: 100px;
+}
+button.selectpicker{
+  width: 100%!important;
+}
+.ofert-main{
+    padding: 25px 0;
+}
+.ofert-main ul.nav-pills  li a{
+  color: #119769;
+}
+.ofert-main ul.nav-pills  li.active a{
+    background-color: #119769!important;
+    color: #fff;
+}
+.ofert-main .btn.btn-success{
+  background-color: #119769;
+}
+.ofert-main .tab-pane{
+    padding: 30px 0;
+}
+.ofert-main .accept-check{
+    display: inline-block;
+    font-weight: bold;
+}
+.checkbox{
+    float: right;
+}
+.checkbox label:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  .checkbox .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+  }
+  
+  .checkbox .cr .cr-icon {
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+    left: 15%;
+  }
+  
+  .checkbox label input[type="checkbox"] {
+    display: none;
+  }
+  
+  .checkbox label input[type="checkbox"]+.cr>.cr-icon {
+    opacity: 0;
+  }
+  
+  .checkbox label input[type="checkbox"]:checked+.cr>.cr-icon {
+    opacity: 1;
+  }
+  
+  .checkbox label input[type="checkbox"]:disabled+.cr {
+    opacity: .5;
+  }
+  
+@media only screen and (max-width: 600px) {
+    .ofert-main .nav.nav-pills li{
+        float: none;
+    }
+  }

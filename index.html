@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
+</head>
+
+<body>
+    <img src="images/karantin.png" alt="" class="header-image">
+    <div class="container">
+        <div class="ofert-main">
+            <ul class="nav nav-pills">
+                <li class="active"><a data-toggle="pill" href="#opt1">Оферта на КАРАНТИННОЕ РАЗРЕШЕНИЕ</a></li>
+                <li><a data-toggle="pill" href="#opt2">Оферта на акт досмотра транспортной единицы</a></li>
+                <li><a data-toggle="pill" href="#opt3">Оферта на фумигацию</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="opt1" class="tab-pane fade in active">
+                    <form action="/action_page.php" class="row">
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="email">Ф.И.О:</label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                        <div class="form-group col-md-3 col-sm-12">
+                            <label for="pwd">ИНН заказчика:</label>
+                            <input type="text" class="form-control" id="pwd">
+                        </div>
+                        <div class="form-group col-md-3 col-sm-12">
+                            <label for="pwd">Телефон номер:</label>
+                            <input type="text" class="form-control" id="pwd">
+                        </div>
+                        <div class="form-group col-md-2 col-sm-12">
+                            <label for="pwd">Количество КР:</label>
+                            <input type="text" placeholder="Введите количество КР" class="form-control" id="pwd">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <div class="accept">
+                                Внимательно изучите нашу Политику конфиденциальности, чтобы знать, какие сведения мы
+                                собираем, в каких целях их используем и как Вы можете их изменять, экспортировать
+                                или удалять.
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <div class="accept-check">
+                                        <input type="checkbox" value="">
+                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                        Согласен
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                        <div class="g-recaptcha" data-sitekey="(your-site-key)"></div>
+                        <div class="col-md-12">
+                            <button type="submit" class="submitter btn btn-success pull-right">Получить Оферта</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="opt2" class="tab-pane fade">
+                    <form action="/action_page.php" class="row">
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="email">Ф.И.О:</label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="pwd">ИНН заказчика:</label>
+                            <input type="text" class="form-control" id="pwd">
+                        </div>
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="pwd">Телефон номер:</label>
+                            <input type="text" class="form-control" id="pwd">
+                        </div>
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="pwd">№ КР:</label>
+                            <input type="text" placeholder="Введите количество КР" class="form-control" id="pwd">
+                        </div>
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="pwd">Количество транспорта</label>
+                            <input type="text" placeholder="Сделать платеж" class="form-control" id="pwd">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <div class="accept">
+                                Внимательно изучите нашу Политику конфиденциальности, чтобы знать, какие сведения мы
+                                собираем, в каких целях их используем и как Вы можете их изменять, экспортировать
+                                или удалять.
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <div class="accept-check">
+                                        <input type="checkbox" value="">
+                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                        Согласен
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="g-recaptcha" data-sitekey="(your-site-key)"></div>
+                        <div class="col-md-12">
+                            <button type="submit" class="submitter btn btn-success pull-right">Получить Оферта</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="opt3" class="tab-pane fade">
+                    <form action="/action_page.php" class="row">
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="email">Ф.И.О:</label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="pwd">ИНН заказчика:</label>
+                            <input type="text" class="form-control" id="pwd">
+                        </div>
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="pwd">Телефон номер:</label>
+                            <input type="text" class="form-control" id="pwd">
+                        </div>
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="sel1">Регион</label>
+                            <select class="form-control" id="sel1">
+                                <option disabled selected>Выберите регион</option>
+                                <option>Андижан</option>
+                                <option>Ташкент</option>
+                                <option>Андижан</option>
+                                <option>Ташкент</option>
+                                <option>Андижан</option>
+                                <option>Ташкент</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="pwd">Сумма:</label>
+                            <input type="text" placeholder="Сделать платеж" class="form-control" id="pwd">
+                        </div>
+                        <div class="form-group col-md-12 acceptance">
+                            <div class="accept">
+                                Внимательно изучите нашу Политику конфиденциальности, чтобы знать, какие сведения мы
+                                собираем, в каких целях их используем и как Вы можете их изменять, экспортировать
+                                или удалять.
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <div class="accept-check">
+                                        <input type="checkbox" value="">
+                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                        Согласен
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <div class="g-recaptcha" data-sitekey="(your-site-key)"></div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-success submitter pull-right">Получить Оферта</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="instruction-main">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.selectpicker').selectpicker();
+            $(".submitter").click(function (e) {
+                e.preventDefault()
+                self = $(this).parent().parent()
+                if (self.find("input:checkbox").is(
+                    ":checked") == false) {
+                    alert("Пожалуйста согласитесь с нашей политикой конфиденциальности")
+                } else {
+                    self.trigger("submit")
+                }
+            })
+            function checkRecaptcha() {
+                var response = grecaptcha.getResponse();
+                if (response.length == 0) {
+                    //reCaptcha not verified
+                    alert("no pass");
+                }
+                else {
+                    //reCaptch verified
+                    alert("pass");
+                }
+            }
+
+            // implement on the backend
+            function backend_API_challenge() {
+                var response = grecaptcha.getResponse();
+                $.ajax({
+                    type: "POST",
+                    url: 'https://www.google.com/recaptcha/api/siteverify',
+                    data: { "secret": "(your-secret-key)", "response": response, "remoteip": "localhost" },
+                    contentType: 'application/x-www-form-urlencoded',
+                    success: function (data) { console.log(data); }
+                });
+            }
+
+            // $("button:submit").click(function (e) {
+            //     e.preventDefault()
+            // if ($(this).closest("input:checkbox").is(
+            //         ":checked") == false) {
+            //         e.preventDefault()
+            //         alert('Пожалуйста согласитесь с нашей политикой конфиденциальности')
+            //     }
+            // })
+        })
+    </script>
+</body>
+
+</html>
